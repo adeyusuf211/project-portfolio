@@ -1,0 +1,351 @@
+/* Responsive */
+/* Ukuran tablet */
+@media screen and (max-width: 1024px) {
+  .nav-logo h3 {
+    font-size: 1.5em;
+  }
+
+  .nav-list a {
+    font-size: 16px;
+  }
+
+  .nav-link .label {
+    width: 40px;
+    height: 15px;
+  }
+
+  .nav-link .ball {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-link .toggle:checked + .label .ball {
+    transform: translateX(25px);
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .about {
+    padding: 0 20px !important;
+  }
+
+  .about .about-image img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .quote h3 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .skill .skill-header h3 {
+    margin-top: 20px;
+  }
+
+  .tools {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tools .tools-header h3 {
+    margin-top: 20px;
+  }
+
+  .footer .footer-text h3 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+}
+
+/* Ukuran Hp */
+@media screen and (max-width: 700px) {
+  #progressBar {
+    display: none;
+  }
+
+  #scrollPath {
+    display: none;
+  }
+
+  .my-nav {
+    height: 80px !important;
+    padding: 0;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-icons {
+    background: var(--rebeccapurple);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: var(--shadow-purple);
+  }
+
+  .nav-icons > * {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+  }
+
+  .nav-icons svg {
+    width: 25px;
+    height: 25px;
+    color: rgb(222, 189, 253);
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-icons svg:hover {
+    fill: rgb(222, 189, 253);
+  }
+
+  .nav-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link .label {
+    width: 35px;
+    height: 10px;
+  }
+
+  .nav-link .ball {
+    width: 14px;
+    height: 14px;
+  }
+
+  .nav-link .toggle:checked + .label .ball {
+    transform: translateX(25px);
+  }
+
+  .header {
+    min-height: 150vh;
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    grid-template-areas: "text text" "image image" "skill skill";
+  }
+
+  .header .header-text > * {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .header .header-text h4 {
+    font-size: 30px;
+  }
+
+  .header .header-text h2 {
+    font-size: 45px;
+  }
+
+  .header .header-text h2 span {
+    margin: 0 10px;
+  }
+
+  .header .header-text h4 span {
+    width: 50px;
+    height: 5px;
+    border-radius: 50px;
+  }
+
+  .header .header-image img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .header .header-skill .header-skill-list {
+    font-size: 20px;
+  }
+
+  .header .header-text .header-link a {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .about {
+    padding: 0 20px;
+  }
+
+  .about .about-image img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .about .about-text h3 {
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+  }
+
+  .about .about-text h3::after {
+    width: 100%;
+  }
+
+  .about .about-text p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .about .about-text a {
+    margin: auto;
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .quote h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .skill {
+    padding: 0 20px;
+  }
+
+  .skill .skill-header {
+    margin-top: 20px;
+  }
+
+  .skill .skill-header h3 {
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+  }
+
+  .skill .skill-header p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .skill {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill .skill-list .list {
+    grid-template-columns: minmax(200px);
+    justify-content: center;
+  }
+
+  .skill .skill-list .list img {
+    padding: 40px;
+  }
+
+  .tools {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tools .tools-list {
+    grid-template-columns: minmax(200px);
+    justify-content: center;
+  }
+
+  .tools .tools-list .t-list img {
+    padding: 40px;
+  }
+
+  .tools .tools-header h3 {
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+  }
+
+  .tools .tools-header h3::after {
+    width: 100%;
+  }
+
+  .tools .tools-header p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .project {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .project .project-text h3 {
+    font-size: 2em;
+  }
+
+  .project .project-text p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .project .project-tabs {
+    display: none;
+  }
+
+  .project .project-image .image-list {
+    padding: 0;
+  }
+
+  .project .project-image {
+    gap: 10px;
+  }
+
+  .my-services {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .my-services .services-text h3 {
+    font-size: 2em;
+  }
+
+  .my-services .services-list .my-card .my-card-body p {
+    font-size: 1.3rem;
+  }
+
+  .my-services .services-list .my-card .my-card-body p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .my-services .services-list .my-card .my-card-link a {
+    margin: auto;
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .project .project-image .image img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+
+  .footer {
+    padding-bottom: 80px;
+  }
+
+  .footer .footer-text h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .footer-sosmed {
+    display: flex;
+  }
+
+  .footer-sosmed .sosmed a {
+    font-size: 16px;
+  }
+}
