@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ade Yusuf | Portfolio</title>
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="../dist/css/responsive.css" />
+    <link rel="stylesheet" href="../dist/css/dark-mode.css">
+  <body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+    <div class="cursor"></div>
+
+    <div class="full-container">
+      <section id="home">
+        <nav class="my-nav" id="my-nav">
+          <div class="nav-logo">
+            <h3>Ade Yusuf</h3>
+          </div>
+          <div class="nav-list">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#gallery">My Project</a></li>
+              <li><a href="#services">My Services</a></li>
+            </ul>
+          </div>
+          <div class="nav-icons">
+            <ul>
+              <li>
+                <a href="#home">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#about">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
+                    <path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#skill">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#gallery">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#services">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-link">
+            <input type="checkbox" class="toggle" id="dark">
+            <label for="dark" class="label">
+              <span class="ball"></span>
+            </label>
+          </div>
+        </nav>
+
+        <div class="header">
+          <div class="header-text">
+            <h4>Hello <span></span></h4>
+            <h2>I'm <span>Ade Yusuf</span></h2>
+            <div class="header-link">
+              <a href="http://t.me/adeyusuf211">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg> Chat Me</a>
+            </div>
+          </div>
+          <div class="header-image">
+            <img src="../dist/svg/undraw_virtual_reality_y5ig.svg" alt="">
+          </div>
+          <div class="header-skill">
+            <div class="header-skill-list">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <p>UI / UX Designer</p>
+            </div>
+            <div class="header-skill-list">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+              </svg>
+              <p>Designer Graphics</p>
+            </div>
+            <div class="header-skill-list">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+              <p>Fullstack Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about">
+          <div class="about-image">
+            <img src="../dist/svg/undraw_male_avatar_323b.svg" alt="">
+          </div>
+          <div class="about-text">
+            <h3>Introduce My Self</h3>
+            <p>Hi Everyone... My name is Ade Yusuf from Indonesia. 
+              I'm Designer Graphics, UI/UX Designer and Fullstack 
+              Developer. I was successfully create any project for 
+              designing application, website or develop 
+              website it self.
+            </p>
+            <a href="mailto:official.adeyusuf@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg> Hire Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="quote">
+        <div class="quote">
+          <h3>"Simple Is Cool and I Love Simplicity"</h3>
+        </div>
+      </section>
+
+      <section id="skill">
+        <div class="skill">
+          <div class="skill-header">
+            <h3>My Expertise</h3>
+            <p>I have learned many things in the field of technology and various technologies have tried to be studied. However, of the many technologies, this is the technology that I have or often use to produce various interesting works.</p>
+          </div>
+          <div class="skill-list">
+            <div class="list">
+              <img src="../dist/img/brands/html5.png" alt="">
+            </div>
+            <div class="list">
+              <img src="../dist/img/brands/css.png" alt="">
+            </div>
+            <div class="list">
+              <img src="../dist/img/brands/javascript.png" alt="">
+            </div>
+            <div class="list">
+              <img src="../dist/img/brands/php.png" alt="">
+            </div>
+            <div class="list">
+              <img src="../dist/img/brands/codeigniter.png" alt="">
+            </div>
+            <div class="list">
+              <img src="../dist/img/brands/laravel.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="tools">
+          <div class="tools-list">
+            <div class="t-list">
+              <img src="../dist/img/brands/coreldraw.png" alt="">
+            </div>
+            <div class="t-list">
+              <img src="../dist/img/brands/github.png" alt="">
+            </div>
+            <div class="t-list">
+              <img src="../dist/img/brands/git.png" alt="">
+            </div>
+            <div class="t-list">
+              <img src="../dist/img/brands/adobe-xd.png" alt="">
+            </div>
+            <div class="t-list">
+              <img src="../dist/img/brands/figma.png" alt="">
+            </div>
+            <div class="t-list">
+              <img src="../dist/img/brands/vs-code.png" alt="">
+            </div>
+          </div>
+          <div class="tools-header">
+            <h3>My Favorite Tools</h3>
+            <p>I have a variety of favorite software, but of the many software that I use, this software is my favorite and I have produced many works with it.</p>
+          </div>
+        </div>/dist
+      </section>
+
+      <section id="gallery">
+        <div class="project">
+          <div class="project-text">
+            <h3>Let's See My Project</h3>
+            <p>Here I present to you various works that I have made in the form of the design of a website, application and others. If you're interested, you can make it a source of inspiration for your other projects.</p>
+          </div>
+          <div class="project-tabs">
+            <div class="button">
+              <button class="active">All</button>
+              <button>Mobile Apps</button>
+              <button>Web Design</button>
+              <button>Logo</button>
+            </div>
+          </div>
+          <div class="project-image">
+            <div class="image-list">
+              <div class="image-card" data-att="mobile apps">
+                <div class="image">
+                  <img src="../dist/img/portfolio/mobile-apps/Presentasi Dompetku Apps.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Dompetku : E-Wallet Mobile Apps Design</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="mobile apps">
+                <div class="image">
+                  <img src="../dist/img/portfolio/mobile-apps/Presentasi gBook Store.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>gBook : Book Store Mobile Apps Design</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="mobile apps">
+                <div class="image" >
+                  <img src="../dist/img/portfolio/mobile-apps/Presentasi aDrive.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>aDrive : Mobile Apps Design Cloud Storage Platform</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="mobile apps">
+                <div class="image">
+                  <img src="../dist/img/portfolio/mobile-apps/Presentasi idCourse Apps.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>idCourse : Mobile Apps Design Online Course Platform</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="mobile apps">
+                <div class="image">
+                  <img src="../dist/img/portfolio/mobile-apps/Presentasi Login And Register Page.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Designing Login and Register Page For Mobile Apps</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="mobile apps">
+                <div class="image">
+                  <img src="../dist/img/portfolio/mobile-apps/Presentasi Ngelancong Apps.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Ngelancong : Mobile Apps Design For Travel Platform</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="mobile apps">
+                <div class="image">
+                  <img src="../dist/img/portfolio/mobile-apps/Presentasi Serabutan Apps.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Serabutan : Mobile Apps Design For Freelance Platform</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="web design">
+                <div class="image">
+                  <img src="../dist/img/portfolio/web-design/Presentasi Coding Challenge.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Designing Website For Coding Challenge</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Mobile Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="web design">
+                <div class="image">
+                  <img src="../dist/img/portfolio/web-design/Presentasi T-Blogs.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>T-Blogs : Designing Website For Blogger Platform</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Web Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="web design">
+                <div class="image">
+                  <img src="../dist/img/portfolio/web-design/Presentasi theCar.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>theCar : Designing Website For Car Store</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Web Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="web design">
+                <div class="image">
+                  <img src="../dist/img/portfolio/web-design/Presentasi uRest.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>uRest : Web Design For Online Food Store Platform</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Web Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="web design">
+                <div class="image">
+                  <img src="../dist/img/portfolio/web-design/Presentasi Web Portfolio.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Designing Website For My Portfolio</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Web Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="web design">
+                <div class="image">
+                  <img src="../dist/img/portfolio/web-design/Presntasi GoFlow.webp" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>GoFlow : Designing Website For Selling Flower</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Web Design</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="logo">
+                <div class="image">
+                  <img src="../dist/img/portfolio/logo/logo 8.jpg" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Logo 1</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Logo</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="logo">
+                <div class="image">
+                  <img src="../dist/img/portfolio/logo/logo 10.jpg" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Logo 2</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Logo</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="logo">
+                <div class="image">
+                  <img src="../dist/img/portfolio/logo/logo 11.jpg" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Logo 3</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Logo</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="logo">
+                <div class="image">
+                  <img src="../dist/img/portfolio/logo/logo 12.jpg" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Logo 4</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Logo</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="logo">
+                <div class="image">
+                  <img src="../dist/img/portfolio/logo/logo adeyusuf.png" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>My Personal Logo</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Logo</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="logo">
+                <div class="image">
+                  <img src="../dist/img/portfolio/logo/logo 2.jpg" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Logo 5</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Logo</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+              <div class="image-card" data-att="logo">
+                <div class="image">
+                  <img src="../dist/img/portfolio/logo/logo 4.jpg" alt="">
+                </div>
+                <div class="image-text">
+                  <h3>Logo 6</h3>
+                  <div class="text">
+                    <p>By : Ade Yusuf</p> <span> | </span> <button>Logo</button>
+                  </div>
+                  <a href="">Look Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="my-services">
+          <div class="services-text">
+            <h3>Look My Services</h3>
+          </div>
+          <div class="services-list">
+            <div class="my-card">
+              <div class="my-card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div class="my-card-body">
+                <h3>Designing Your Web or Application</h3>
+                <p>Do you need someone for designing your web or application? if yes, i'm here for solved your problem. Start from <span style="color: rgb(214, 129, 214);">$30,</span> you can get many interested featured from me.</p>
+              </div>
+              <div class="my-card-link">
+                <a href="">Get Now</a>
+              </div>
+            </div>
+            <div class="my-card">
+              <div class="my-card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                </svg>
+              </div>
+              <div class="my-card-body">
+                <h3>Designing Your Branding</h3>
+                <p>Do you need designer for design your branding assets? let's call me for get this. I can give you many interested featured. Start from <span style="color: rgb(214, 129, 214);">50$</span> and you can get this services.</p>
+              </div>
+              <div class="my-card-link">
+                <a href="">Get Now</a>
+              </div>
+            </div>
+            <div class="my-card">
+              <div class="my-card-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <div class="my-card-body">
+                <h3>Convert Your Design Into Real Program</h3>
+                <p>If you have designing website and you need to convert this design into real program, you can use this service.Start from <span style="color: rgb(214, 129, 214);">100$</span> and you can get real program for your design.</p>
+              </div>
+              <div class="my-card-link">
+                <a href="">Get Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="footer-sosmed">
+          <div class="sosmed">
+            <a href="https://www.facebook.com/ade.yusuf.96930/">Facebook</a>
+          </div>
+          <div class="sosmed">
+            <a href="https://www.github.com/adeyusuf211">Github</a>
+          </div>
+          <div class="sosmed">
+            <a href="https://www.behance.net/adeyusuf211">Behance</a>
+          </div>
+          <div class="sosmed">
+            <a href="https://dribbble.com/AYStudio">Dribbble</a>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-text">
+            <h3>This Website Created By &copy; Ade Yusuf 2020</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <script src="../dist/js/script.js"></script>
+  </body>
+</html>
