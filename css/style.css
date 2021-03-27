@@ -31,6 +31,33 @@
   /* End variable shadow */
 }
 
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  place-content: center;
+  background-color: var(--rebeccapurple);
+  position: fixed;
+  z-index: 30000000;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  animation: load 1s ease-in infinite;
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+    border-radius: 50px;
+  }
+}
+
 .full-container {
   width: 100%;
   height: 100%;

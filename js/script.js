@@ -10,6 +10,14 @@ window.addEventListener('scroll', function() {
 });
 // End sticky navbar script
 
+// script for loader 
+const load = document.querySelector('.loader');
+
+window.addEventListener('beforeunload', function() {
+    load.style.display = "grid";
+});
+// end loader script
+
 // Script for unique scrollbar
 let progress    = document.getElementById('progressBar');
 let totalHeight = document.body.scrollHeight - window.innerHeight;
