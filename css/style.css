@@ -45,7 +45,7 @@
   width: 100px;
   height: 100px;
   background-color: cornflowerblue;
-  animation: load 1s ease-in infinite;
+  animation: load 0.5s ease-in infinite;
 }
 
 @keyframes load {
