@@ -71,6 +71,10 @@
     display: none;
   }
 
+  .cursor {
+    display: none;
+  }
+
   .my-nav {
     height: 80px !important;
     padding: 0;
