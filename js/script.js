@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
 // End sticky navbar script
 
 // script for loader 
-const load = document.querySelector('.loader');
+const load = document.querySelector('.load');
 
 window.addEventListener('beforeunload', function() {
     load.style.display = "grid";
