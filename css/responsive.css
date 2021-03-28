@@ -149,7 +149,7 @@
   }
 
   .header .header-text h2 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .header .header-text h2 span {
@@ -187,8 +187,7 @@
 
   .about .about-text h3 {
     font-size: 2em;
-    display: grid;
-    place-items: center;
+    text-align: center;
   }
 
   .about .about-text h3::after {
