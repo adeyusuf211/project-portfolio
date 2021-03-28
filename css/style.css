@@ -924,3 +924,30 @@
   margin-bottom: 20px;
 }
 /* End section footer */
+
+/* style for chat */
+.chat {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  display: grid;
+  place-content: center;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  background-color: var(--rebeccapurple);
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.chat svg {
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+.chat:hover {
+  box-shadow: 0 0 20px rgba(76, 32, 121, 0.5);
+  transform: scale(1.1) rotate(-25deg);
+}
+/* end chat style */

@@ -355,4 +355,15 @@
   .footer-sosmed .sosmed a {
     font-size: 16px;
   }
+
+  .chat {
+    width: 60px;
+    height: 60px;
+    margin: 100px 20px;
+  }
+
+  .chat svg {
+    width: 40px;
+    height: 40px;
+  }
 }
