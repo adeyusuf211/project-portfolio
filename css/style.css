@@ -383,29 +383,40 @@
   font-weight: 700;
 }
 
-.header .header-text .header-link a {
-  position: relative;
+.header .header-text .header-link {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  border-radius: 50px;
+}
+
+.header .header-text .header-link .btn-sosmed {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: grid;
+  place-content: center;
+}
+
+.header .header-text .header-link .btn-sosmed:nth-child(1) {
+  background-color: blue;
+}
+
+.header .header-text .header-link .btn-sosmed:nth-child(2) {
+  background-color: rgb(252, 125, 231);
+}
+
+.header .header-text .header-link .btn-sosmed:nth-child(3) {
+  background-color: rgb(224, 71, 199);
+}
+
+.header .header-text .header-link .btn-sosmed:nth-child(4) {
+  background-color: rgb(32, 32, 32);
+}
+
+.header .header-text .header-link .btn-sosmed a {
   text-decoration: none;
-  width: 150px;
-  height: 50px;
-  background-color: var(--rebeccapurple);
-  box-shadow: var(--shadow-purple);
-  transition: all 0.3s ease-in-out;
-  margin: 20px 5px;
   color: white;
-}
-
-.header .header-text .header-link a:hover {
-  box-shadow: var(--shadow-purple-hover);
-}
-
-.header .header-text .header-link a svg {
-  width: 25px;
-  height: 25px;
 }
 
 .header .header-image {
