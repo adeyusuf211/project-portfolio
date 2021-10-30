@@ -80,41 +80,41 @@
     padding: 0;
   }
 
-  .nav-list {
-    display: none;
+  .nav-logo {
+    width: 100vw;
+    text-align: center;
   }
 
-  .nav-icons {
-    background: var(--rebeccapurple);
+  .nav-list {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    background-color: rebeccapurple;
     height: 80px;
-    box-shadow: var(--shadow-purple);
-  }
-
-  .nav-icons > * {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
     width: 100vw;
   }
 
-  .nav-icons svg {
-    width: 25px;
-    height: 25px;
-    color: rgb(222, 189, 253);
-    transition: all 0.5s ease-in;
-  }
-
-  .nav-icons svg:hover {
-    fill: rgb(222, 189, 253);
-  }
-
-  .nav-logo {
-    width: 100%;
+  .nav-list ul li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    padding: 0 2em;
+    font-size: 14px;
+  }
+
+  .nav-list ul li a > svg {
+    display: flex;
+    width: 30px;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  .nav-list ul li a > span {
+    display: none;
+  }
+
+  .nav-link {
+    display: none;
   }
 
   .nav-link .label {
@@ -132,16 +132,20 @@
   }
 
   .header {
-    min-height: 150vh;
     grid-template-columns: 1fr;
     padding: 0 10px;
-    grid-template-areas: "text text" "image image" "skill skill";
+  }
+
+  .header .header-text {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    height: 100%;
+    box-sizing: border-box;
   }
 
   .header .header-text > * {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
+    margin: auto;
   }
 
   .header .header-text h4 {
@@ -162,18 +166,22 @@
     border-radius: 50px;
   }
 
+  .header .header-text .header-link a {
+    height: 50px;
+    font-size: 16px;
+  }
+
   .header .header-image img {
     width: 300px;
     height: 180px;
   }
 
-  .header .header-skill .header-skill-list {
-    font-size: 20px;
+  .header-skill {
+    padding: 0 10px;
   }
 
-  .header .header-text .header-link a {
-    height: 50px;
-    font-size: 16px;
+  .header-skill .header-skill-list {
+    font-size: 20px;
   }
 
   .about {

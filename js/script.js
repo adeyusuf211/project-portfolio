@@ -3,7 +3,12 @@ const nav   = document.getElementById('my-nav');
 const list  = document.querySelectorAll('.nav-list a');
 
 window.addEventListener('scroll', function() {
-    nav.classList.toggle('fixed', scrollY > 0);
+    setTimeout(() => {
+        nav.classList.toggle('fixed', scrollY > 500);
+    }, 300);
+    // setTimeout(() => {
+    //     nav.classList.toggle('fixed1', scrollY > 1000);
+    // }, 500);
     for(let i = 0; i < list.length; i++) {
         list[i].classList.toggle('fixed', scrollY > 0);
     }
@@ -54,30 +59,16 @@ btn.forEach(item => {
 
 const tombol    = document.getElementById('dark');
 const tabs      = document.querySelector('.project-tabs .button');
-const h3About   = document.querySelector('.about .about-text h3');
-const h3Skill   = document.querySelector('.skill .skill-header h3');
-const h3Tools   = document.querySelector('.tools .tools-header h3');
-const h3Projek  = document.querySelector('.project .project-text h3');
-const sosmed    = document.querySelectorAll('.footer-sosmed .sosmed');
 const navList   = document.querySelectorAll('.nav-list a');
-const sosmedA   = document.querySelectorAll('.footer-sosmed .sosmed a');
-const services  = document.querySelector('.my-services .services-text h3');
 const cardIcon  = document.querySelectorAll('.my-services .services-list .my-card .my-card-header svg')
+const h3All     = document.querySelectorAll('h3');
 
-tombol.addEventListener('change', function() {
+tombol.addEventListener('click', function() {
     document.body.classList.toggle('dark');
     tabs.classList.toggle('dark');
-    h3About.classList.toggle('dark');
-    h3Skill.classList.toggle('dark');
-    h3Tools.classList.toggle('dark');
-    h3Projek.classList.toggle('dark');
-    services.classList.toggle('dark');
-    for(let i = 0; i < sosmed.length; i++) {
-        sosmed[i].classList.toggle('dark');
-    }
-    for(let i = 0; i < sosmedA.length; i++) {
-        sosmedA[i].classList.toggle('dark');
-    }
+    h3All.forEach(h3 => {
+        h3.classList.toggle('dark');
+    });
     for(let i = 0; i < navList.length; i++) {
         navList[i].classList.toggle('dark');
     }

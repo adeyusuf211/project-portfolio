@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -251,16 +253,20 @@
 
 /* Start section header and nav*/
 .my-nav {
-  position: fixed;
+  position: absolute;
   z-index: 1000;
-  width: 100%;
+  width: 100vw;
   height: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
 }
 
 .my-nav.fixed {
+  position: fixed;
   background-color: var(--rebeccapurple);
   height: 100px;
   box-shadow: 0 0 10px rgb(111, 58, 163, 0.3);
@@ -268,8 +274,22 @@
   transition: all 0.3s ease-in;
 }
 
+/* .my-nav.fixed1 {
+  position: fixed;
+  background-color: blue;
+  height: 100px;
+  box-shadow: 0 0 10px rgb(111, 58, 163, 0.3);
+  color: white;
+  transition: all 0.3s ease-in;
+} */
+
 .nav-list a.fixed {
   color: white;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-logo img {
@@ -282,22 +302,29 @@
   font-weight: 500;
 }
 
-.nav-list > * {
+.nav-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 100%;
-  width: 700px;
+}
+
+.nav-list ul {
+  display: flex;
 }
 
 .nav-list a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
+  padding: 1em;
 }
 
-.nav-link {
-  width: 200px;
+.nav-list ul li a > svg {
+  display: none;
+}
+
+/* .nav-link {
   height: 100%;
   display: grid;
   place-items: center;
@@ -340,24 +367,21 @@
 .nav-link .toggle:checked + .label .ball {
   transform: translateX(32px);
   background-color: var(--dark-mode);
-}
+} */
 /* End navbar */
 
 .header {
   display: grid;
-  padding: 0 100px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 2fr, 1fr;
-  grid-template-areas: "text image" "skill skill";
+  padding: 0 50px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   place-content: center start;
-  min-height: 100vh;
-  padding-top: 30px;
+  height: 100vh;
 }
 
 .header .header-text {
   place-content: center;
-  grid-area: text;
   width: 100%;
+  padding: 50px;
 }
 
 .header .header-text h4 {
@@ -383,65 +407,50 @@
   font-weight: 700;
 }
 
-.header .header-text .header-link {
-  display: flex;
-  align-items: center;
-}
-
-.header .header-text .header-link .btn-sosmed {
-  width: 60px;
-  height: 60px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  margin: 0 5px;
-  display: grid;
-  place-content: center;
-}
-
-.header .header-text .header-link .btn-sosmed:nth-child(1) {
-  background-color: blue;
-}
-
-.header .header-text .header-link .btn-sosmed:nth-child(2) {
-  background-color: rgb(252, 125, 231);
-}
-
-.header .header-text .header-link .btn-sosmed:nth-child(3) {
-  background-color: rgb(224, 71, 199);
-}
-
-.header .header-text .header-link .btn-sosmed:nth-child(4) {
-  background-color: rgb(32, 32, 32);
-}
-
-.header .header-text .header-link .btn-sosmed a {
+.header .header-text a {
   text-decoration: none;
+  width: 150px;
+  height: 50px;
+  background-color: var(--rebeccapurple);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
   color: white;
+  box-shadow: var(--shadow-purple);
+  border-radius: 50px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+.header .header-text a:hover {
+  box-shadow: var(--shadow-purple-hover);
 }
 
 .header .header-image {
-  grid-area: image;
   width: 100%;
   height: 100%;
   display: grid;
   place-content: center;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
 
 .header .header-image img {
-  width: 600px;
-  height: 350px;
+  display: flex;
+  width: 100%;
 }
+/* End for section header */
 
-.header .header-skill {
-  grid-area: skill;
+.header-skill {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: space-between;
-  transform: translateY(100px);
+  padding: 0 100px;
 }
 
-.header .header-skill .header-skill-list {
+.header-skill .header-skill-list {
   display: flex;
   align-items: center;
   font-size: 25px;
@@ -449,12 +458,11 @@
   width: 100%;
 }
 
-.header .header-skill .header-skill-list svg {
+.header-skill .header-skill-list svg {
   margin: 0 20px;
   width: 50px;
   height: 50px;
 }
-/* End for section header */
 
 /* Start for section about */
 .about {
@@ -464,6 +472,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0 100px;
 }
 
 .about .about-text {
@@ -473,18 +482,19 @@
 }
 
 .about .about-text h3 {
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 500;
   letter-spacing: 2px;
   position: relative;
   color: var(--text-color);
+  font-family: "alfa slab one";
 }
 
 .about .about-text p {
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 1px;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 .about .about-text a {
@@ -561,7 +571,7 @@
 .skill {
   width: 100%;
   min-height: 100vh;
-  padding: 0 100px;
+  padding: 50px 100px;
   box-sizing: border-box;
   display: grid;
   gap: 20px;
@@ -573,18 +583,19 @@
 }
 
 .skill .skill-header h3 {
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 500;
   letter-spacing: 2px;
   position: relative;
   color: var(--text-color);
+  font-family: "alfa slab one";
 }
 
 .skill .skill-header p {
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 3px;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 .skill .skill-list {
@@ -592,7 +603,7 @@
   gap: 10px;
   place-content: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 30px;
+  padding: 10px;
 }
 
 .skill .skill-list .list {
@@ -629,18 +640,19 @@
 }
 
 .project .project-text h3 {
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 500;
   letter-spacing: 3px;
   position: relative;
   color: var(--text-color);
+  font-family: "alfa slab one";
 }
 
 .project .project-text p {
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 3px;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 .project .project-tabs {
@@ -685,7 +697,7 @@
   gap: 10px;
   box-sizing: border-box;
   overflow-x: hidden;
-  padding: 30px;
+  padding: 10px;
 }
 
 .project .project-image .image-list .image-card {
@@ -777,11 +789,11 @@
 }
 
 .services-text h3 {
-  font-size: 3em;
+  font-family: "alfa slab one";
+  font-size: 5em;
   font-weight: 500;
   letter-spacing: 3px;
   position: relative;
-  color: var(--text-color);
 }
 
 .services-list {
