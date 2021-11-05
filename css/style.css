@@ -359,6 +359,7 @@
 
 .tools .list-of-tools .tool h4 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .tools .list-of-tools .tool:hover {
