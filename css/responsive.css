@@ -35,30 +35,6 @@
     width: 50%;
     height: 50%;
   }
-
-  .quote h3 {
-    font-size: 2.5em;
-    text-align: center;
-  }
-
-  .skill .skill-header h3 {
-    margin-top: 20px;
-  }
-
-  .tools {
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .tools .tools-header h3 {
-    margin-top: 20px;
-  }
-
-  .footer .footer-text h3 {
-    font-size: 2.5em;
-    text-align: center;
-  }
 }
 
 /* Ukuran Hp */
@@ -88,7 +64,7 @@
   .nav-list {
     position: fixed;
     bottom: 0;
-    background-color: rebeccapurple;
+    background-color: var(--orange);
     height: 80px;
     width: 100vw;
   }
@@ -106,7 +82,7 @@
     display: flex;
     width: 30px;
     margin-bottom: 5px;
-    color: white;
+    color: black;
   }
 
   .nav-list ul li a > span {
@@ -185,193 +161,57 @@
   }
 
   .about {
-    padding: 0 20px;
+    padding: 0;
+    grid-template-columns: 1fr;
   }
 
-  .about .about-image img {
-    width: 70%;
-    height: 70%;
+  .about .about-text h1 {
+    font-size: 5em;
   }
 
-  .about .about-text h3 {
-    font-size: 2em;
-    text-align: center;
+  .about .about-desc {
+    padding: 20px 0;
   }
 
-  .about .about-text h3::after {
-    width: 100%;
-  }
-
-  .about .about-text p {
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  .about .about-text a {
-    margin: auto;
-    margin-bottom: 20px;
-    height: 50px;
-    font-size: 16px;
-  }
-
-  .quote h3 {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  .skill {
-    padding: 0 20px;
-  }
-
-  .skill .skill-header {
-    margin-top: 20px;
-  }
-
-  .skill .skill-header h3 {
-    font-size: 2em;
-    display: grid;
-    place-items: center;
-  }
-
-  .skill .skill-header p {
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  .skill {
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skill .skill-list .list {
-    grid-template-columns: minmax(200px);
-    justify-content: center;
-  }
-
-  .skill .skill-list .list img {
-    padding: 40px;
+  .about .about-desc p {
+    font-size: 2rem;
   }
 
   .tools {
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column-reverse;
+    padding: 0;
   }
 
-  .tools .tools-list {
-    grid-template-columns: minmax(200px);
-    justify-content: center;
+  .projects {
+    grid-template-columns: 1fr;
+    grid-template-areas: "text" "gallery";
   }
 
-  .tools .tools-list .t-list img {
-    padding: 40px;
-  }
-
-  .tools .tools-header h3 {
-    font-size: 2em;
-    display: grid;
-    place-items: center;
-  }
-
-  .tools .tools-header h3::after {
-    width: 100%;
-  }
-
-  .tools .tools-header p {
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  .project {
-    padding: 0 10px;
+  .projects .project-text {
+    padding: 0;
     box-sizing: border-box;
   }
 
-  .project .project-text h3 {
-    font-size: 2em;
+  .projects .project-text h1 {
+    font-size: 3em;
     text-align: center;
   }
 
-  .project .project-text p {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .project .project-tabs {
-    display: none;
-  }
-
-  .project .project-image .image-list {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  .project .project-image {
-    gap: 10px;
-  }
-
-  .my-services {
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  .my-services .services-text h3 {
-    font-size: 2em;
-  }
-
-  .my-services .services-list .my-card .my-card-body p {
-    font-size: 1.3rem;
-  }
-
-  .my-services .services-list .my-card .my-card-body p {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .my-services .services-list .my-card .my-card-link a {
-    margin: auto;
-    margin-bottom: 20px;
-    height: 50px;
-    font-size: 16px;
-  }
-
-  .project .project-image .image img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-  }
-
-  .footer {
-    padding-bottom: 80px;
-  }
-
-  .footer .footer-text h3 {
-    font-size: 2em;
-    text-align: center;
+  .collaboration {
     padding: 0 20px;
   }
 
-  .footer-sosmed {
-    display: flex;
+  .collaboration h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
-  .footer-sosmed .sosmed a {
-    font-size: 16px;
+  .footer h1 {
+    font-size: 4rem;
+    text-align: center;
   }
 
-  .chat {
-    width: 60px;
-    height: 60px;
-    margin: 100px 20px;
-  }
-
-  .chat svg {
-    width: 40px;
-    height: 40px;
+  .footer-copy {
+    transform: translateY(-100px);
   }
 }
