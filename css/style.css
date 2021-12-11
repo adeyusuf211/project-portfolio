@@ -370,39 +370,54 @@
   width: 100vw;
   min-height: 100vh;
   background-color: rgb(253, 240, 216);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-template-areas: "gallery text";
-}
-
-.projects .project-text {
-  display: grid;
-  place-content: center;
-  grid-area: text;
-}
-
-.projects .project-text h1 {
-  font-size: 5em;
-  color: rgb(122, 80, 0);
-  margin-bottom: 30px;
+  padding: 50px 100px;
 }
 
 .projects .project-gallery {
-  height: 100%;
-  grid-area: gallery;
-}
-
-.projects .project-gallery .project-list {
-  width: 100%;
-  height: 100%;
   display: grid;
-  place-content: center;
-  padding: 50px;
+  gap: 30px;
 }
 
-.projects .project-gallery .project-list img {
-  object-fit: cover;
+.projects .project-gallery h1 {
+  font-size: 5em;
+  color: rgb(122, 80, 0);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.projects .project-gallery .project {
+  display: flex;
+  border: 1px solid rgb(92, 60, 0);
+}
+
+.projects .project-gallery .project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.projects .project-gallery .project:nth-child(odd) {
+  flex-direction: row;
+}
+
+.projects .project-gallery .project .img {
+  display: flex;
+  width: 50%;
+}
+
+.projects .project-gallery .project .img img {
   width: 100%;
+  object-fit: cover;
+}
+
+.projects .project-gallery .project .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.projects .project-gallery .project .text h1 {
+  font-size: 4em;
+  text-align: center;
 }
 
 .collaboration {
@@ -470,21 +485,6 @@
   position: relative;
 }
 
-.footer .follows {
-  display: flex;
-  justify-content: center;
-  font-size: 1em;
-  margin-top: 20px;
-}
-
-.footer .follows .follow {
-  padding: 10px;
-}
-
-.footer .follows .follow a > svg {
-  color: white;
-}
-
 .footer-copy {
   width: 100vw;
   height: 10vh;
@@ -495,4 +495,24 @@
 .footer-copy h4 {
   font-size: 1.5rem;
   color: var(--text);
+}
+
+.follows {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.follows .follow {
+  padding: 0 15px;
+}
+
+.follows .follow a > svg {
+  width: 40px;
+  transition: 0.5s ease-in;
+}
+
+.follows .follow a > svg:hover {
+  transform: scale(1.2);
 }
