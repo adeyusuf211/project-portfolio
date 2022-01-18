@@ -39,6 +39,22 @@
 
 /* Ukuran Hp */
 @media screen and (max-width: 700px) {
+  .title h1 {
+    font-size: 3em;
+  }
+
+  .title p {
+    font-size: 1.5rem;
+  }
+
+  .desc h3 {
+    font-size: 2rem;
+  }
+
+  .desc h5 {
+    font-size: 1.5rem;
+  }
+
   .my-nav {
     height: 80px !important;
     padding: 0;
@@ -138,22 +154,6 @@
     padding: 100px 20px;
   }
 
-  .ui .grid .title h1 {
-    font-size: 3em;
-  }
-
-  .ui .grid .title p {
-    font-size: 1.5rem;
-  }
-
-  .ui .grid .description .desc h3 {
-    font-size: 2rem;
-  }
-
-  .ui .grid .description .desc h5 {
-    font-size: 1.5rem;
-  }
-
   .design-graphics {
     padding: 50px 20px;
     height: 100%;
@@ -165,22 +165,6 @@
 
   .design {
     padding: 100px 20px;
-  }
-
-  .design .grid .title h1 {
-    font-size: 5em;
-  }
-
-  .design .grid .title p {
-    font-size: 1.5rem;
-  }
-
-  .design .grid .description .desc h3 {
-    font-size: 2rem;
-  }
-
-  .design .grid .description .desc h5 {
-    font-size: 1.5rem;
   }
 
   .website {
@@ -196,29 +180,9 @@
     padding: 100px 20px;
   }
 
-  .web .grid .title h1 {
-    font-size: 5em;
-  }
-
-  .web .grid .title p {
-    font-size: 1.5rem;
-  }
-
   .web .grid .description {
     justify-content: start;
     padding: 0;
-  }
-
-  .web .grid .description .desc h3 {
-    font-size: 2rem;
-  }
-
-  .web .grid .description .desc h5 {
-    font-size: 1.5rem;
-  }
-
-  .web img {
-    width: 140%;
   }
 
   .footer {
@@ -226,7 +190,8 @@
   }
 
   .footer h1 {
-    font-size: 5em;
+    font-size: 3.5em;
+    text-align: center;
   }
 
   .footer-copy {
