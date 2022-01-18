@@ -1,6 +1,6 @@
 /* Responsive */
 /* Ukuran tablet */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .nav-logo h3 {
     font-size: 1.5em;
   }
@@ -35,22 +35,10 @@
     width: 50%;
     height: 50%;
   }
-}
+} */
 
 /* Ukuran Hp */
 @media screen and (max-width: 700px) {
-  #progressBar {
-    display: none;
-  }
-
-  #scrollPath {
-    display: none;
-  }
-
-  .cursor {
-    display: none;
-  }
-
   .my-nav {
     height: 80px !important;
     padding: 0;
@@ -64,7 +52,7 @@
   .nav-list {
     position: fixed;
     bottom: 0;
-    background-color: var(--orange);
+    background-color: black;
     height: 80px;
     width: 100vw;
   }
@@ -89,129 +77,171 @@
     display: none;
   }
 
-  .nav-link {
-    display: none;
-  }
-
-  .nav-link .label {
-    width: 35px;
-    height: 10px;
-  }
-
-  .nav-link .ball {
-    width: 14px;
-    height: 14px;
-  }
-
-  .nav-link .toggle:checked + .label .ball {
-    transform: translateX(25px);
-  }
-
   .header {
-    grid-template-columns: 1fr;
-    padding: 0 10px;
-  }
-
-  .header .header-text {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    height: 100%;
-    box-sizing: border-box;
-  }
-
-  .header .header-text > * {
-    margin: auto;
-  }
-
-  .header .header-text h4 {
-    font-size: 30px;
-  }
-
-  .header .header-text h2 {
-    font-size: 40px;
-  }
-
-  .header .header-text h2 span {
-    margin: 0 10px;
-  }
-
-  .header .header-text h4 span {
-    width: 50px;
-    height: 5px;
-    border-radius: 50px;
-  }
-
-  .header .header-text .header-link a {
-    height: 50px;
-    font-size: 16px;
-  }
-
-  .header .header-image img {
-    width: 300px;
-    height: 180px;
-  }
-
-  .header-skill {
-    padding: 0 10px;
-  }
-
-  .header-skill .header-skill-list {
-    font-size: 20px;
-  }
-
-  .about {
-    padding: 0;
-    grid-template-columns: 1fr;
-  }
-
-  .about .about-text h1 {
-    font-size: 5em;
-  }
-
-  .about .about-desc {
-    padding: 20px 0;
-  }
-
-  .about .about-desc p {
-    font-size: 2rem;
-  }
-
-  .tools {
-    padding: 0;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-    grid-template-areas: "text" "gallery";
-  }
-
-  .projects .project-text {
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .projects .project-text h1 {
-    font-size: 3em;
-    text-align: center;
-  }
-
-  .collaboration {
     padding: 0 20px;
   }
 
-  .collaboration h1 {
+  .header h1 {
+    font-size: 3em;
+  }
+
+  .about {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .about .about-text {
+    place-content: start;
+  }
+
+  .about .about-text h1 {
+    font-size: 4em;
+  }
+
+  .about .about-desc p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+
+  .tools {
+    padding: 0 10px;
+  }
+
+  .tools h1 {
+    font-size: 4em;
+    margin-top: 50px;
+  }
+
+  .tools .list-of-tools .tool h4 {
+    font-size: 2rem;
+  }
+
+  .ui-design {
+    padding: 50px 20px;
+    height: 100%;
+  }
+
+  .ui-design h1 {
     font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .description {
+    justify-content: start;
+    padding: 0;
+  }
+
+  .ui {
+    padding: 100px 20px;
+  }
+
+  .ui .grid .title h1 {
+    font-size: 3em;
+  }
+
+  .ui .grid .title p {
+    font-size: 1.5rem;
+  }
+
+  .ui .grid .description .desc h3 {
+    font-size: 2rem;
+  }
+
+  .ui .grid .description .desc h5 {
+    font-size: 1.5rem;
+  }
+
+  .design-graphics {
+    padding: 50px 20px;
+    height: 100%;
+  }
+
+  .design-graphics h1 {
+    font-size: 2.5em;
+  }
+
+  .design {
+    padding: 100px 20px;
+  }
+
+  .design .grid .title h1 {
+    font-size: 5em;
+  }
+
+  .design .grid .title p {
+    font-size: 1.5rem;
+  }
+
+  .design .grid .description .desc h3 {
+    font-size: 2rem;
+  }
+
+  .design .grid .description .desc h5 {
+    font-size: 1.5rem;
+  }
+
+  .website {
+    padding: 50px 20px;
+    height: 100%;
+  }
+
+  .website h1 {
+    font-size: 2.5em;
+  }
+
+  .web {
+    padding: 100px 20px;
+  }
+
+  .web .grid .title h1 {
+    font-size: 5em;
+  }
+
+  .web .grid .title p {
+    font-size: 1.5rem;
+  }
+
+  .web .grid .description {
+    justify-content: start;
+    padding: 0;
+  }
+
+  .web .grid .description .desc h3 {
+    font-size: 2rem;
+  }
+
+  .web .grid .description .desc h5 {
+    font-size: 1.5rem;
+  }
+
+  .web img {
+    width: 140%;
+  }
+
+  .footer {
+    padding: 0 20px;
   }
 
   .footer h1 {
-    font-size: 4rem;
-    text-align: center;
+    font-size: 5em;
   }
 
   .footer-copy {
-    transform: translateY(-100px);
+    margin-bottom: 80px;
+  }
+
+  .follows {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .follows .follow a > svg {
+    width: 40px;
   }
 }
