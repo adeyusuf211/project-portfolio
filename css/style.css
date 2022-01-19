@@ -366,15 +366,7 @@ h1 {
 
 .ui .image img {
   object-fit: cover;
-}
-
-.ui:nth-child(2) .image {
-  display: flex;
-  margin-top: 50px;
-}
-
-.ui:nth-child(2) .image img {
-  object-fit: cover;
+  width: 100%;
 }
 
 .design-graphics {
@@ -495,8 +487,7 @@ h1 {
   color: white;
 }
 
-.design img {
-  display: flex;
+.design .image img {
   object-fit: cover;
   width: 100%;
 }
