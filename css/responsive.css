@@ -112,6 +112,7 @@
   }
 
   .about .about-text h1 {
+    margin-top: 20px;
     font-size: 4em;
   }
 
@@ -201,7 +202,7 @@
 
   .follows {
     position: absolute;
-    bottom: 150px;
+    bottom: 170px;
     display: flex;
     width: 100%;
     padding: 0 20px;
