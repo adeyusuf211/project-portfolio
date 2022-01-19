@@ -122,13 +122,14 @@ h1 {
 
 .my-nav {
   background: rgb(1, 0, 5);
-  position: fixed;
+  position: absolute;
+  justify-content: space-between;
+  padding: 0 100px;
   transition: all 0.3s ease-in;
 }
 
 .my-nav.fixed {
-  height: 80px !important;
-  padding: 0;
+  position: fixed;
 }
 
 .nav-logo {
