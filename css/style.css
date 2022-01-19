@@ -174,8 +174,24 @@ h1 {
   height: 100vh;
   font-family: var(--pairplay-display);
   color: var(--heading);
-  background: rgb(1, 0, 5);
+  background: url(/img/background/art-3561710_1920.webp);
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(1, 0, 5, 0.9);
+  position: absolute;
+  top: 0;
+}
+
+.header h1 {
+  z-index: 1;
 }
 
 /* End for section header */
@@ -248,10 +264,25 @@ h1 {
   padding: 100px;
   width: 100vw;
   height: 100vh;
-  background: rgb(0, 6, 22);
+  background: url(/img/background/background-15343_1920.webp);
+  background-size: cover;
   display: grid;
   place-content: center;
   color: white;
+  position: relative;
+}
+
+.ui-design::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgb(0, 6, 22, 0.8);
+}
+
+.ui-design h1 {
+  z-index: 1;
 }
 
 .ui {
@@ -352,7 +383,22 @@ h1 {
   padding: 100px;
   display: grid;
   place-content: center;
-  background: rgb(29, 0, 0);
+  background: url(/img/background/gold-2889396_1920.webp);
+  background-size: cover;
+  position: relative;
+}
+
+.design-graphics::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(29, 0, 0, 0.9);
+  position: absolute;
+  z-index: 1;
+}
+
+.design-graphics h1 {
+  z-index: 2;
 }
 
 .design {
@@ -461,7 +507,21 @@ h1 {
   padding: 100px;
   display: grid;
   place-content: center;
-  background: rgb(29, 0, 29);
+  background: url(/img/background/wave-81840_1280.webp);
+  background-size: cover;
+  position: relative;
+}
+
+.website::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(29, 0, 29, 0.9);
+}
+
+.website h1 {
+  z-index: 2;
 }
 
 .web {
