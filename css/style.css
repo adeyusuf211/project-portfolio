@@ -120,10 +120,15 @@ h1 {
   font-family: var(--poppins);
 }
 
-.my-nav.fixed {
+.my-nav {
   background: rgb(1, 0, 5);
   position: fixed;
   transition: all 0.3s ease-in;
+}
+
+.my-nav.fixed {
+  height: 80px !important;
+  padding: 0;
 }
 
 .nav-logo {

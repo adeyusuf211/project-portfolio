@@ -55,7 +55,7 @@
     font-size: 1.5rem;
   }
 
-  .my-nav.fixed {
+  .my-nav {
     height: 80px !important;
     padding: 0;
   }
