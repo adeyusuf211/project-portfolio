@@ -67,6 +67,7 @@
 .image {
   display: flex;
   margin-top: 50px;
+  position: relative;
 }
 
 .colors {
@@ -500,6 +501,28 @@ h1 {
 .web .image img {
   object-fit: cover;
   width: 100%;
+}
+
+.hover {
+  position: absolute;
+  top: 0;
+  display: grid;
+  place-content: center;
+  background: rgba(87, 126, 255, 0.8);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.hover:hover {
+  opacity: 1;
+}
+
+.hover > * {
+  width: 100px;
+  height: 100px;
+  fill: white;
 }
 
 .footer {
