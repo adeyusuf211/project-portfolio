@@ -18,3 +18,21 @@ const content    = `<a href="https://www.instagram.com/adeyusuf.official" target
 
 footerCopy.innerHTML = getTahunCopyright(content);
 // End auto updating year in footer script
+
+// script for smooth scrolling
+const links = document.querySelectorAll(".nav-list ul li a");
+
+links.forEach(link => {
+    link.addEventListener('click', clickHandler);
+});
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href        = this.getAttribute("href");
+  const offsetTop   = document.querySelector(href).offsetTop;
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+// end smooth scrolling script
