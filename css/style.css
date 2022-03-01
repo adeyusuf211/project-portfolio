@@ -180,7 +180,7 @@ h1 {
   height: 100vh;
   font-family: var(--pairplay-display);
   color: var(--heading);
-  background: url(/img/background/art-3561710_1920.webp);
+  background: url(/img/background/art-3561710_1920.avif);
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -270,7 +270,7 @@ h1 {
   padding: 100px;
   width: 100vw;
   height: 100vh;
-  background: url(/img/background/background-15343_1920.webp);
+  background: url(/img/background/background-15343_1920.avif);
   background-size: cover;
   display: grid;
   place-content: center;
@@ -381,7 +381,7 @@ h1 {
   padding: 100px;
   display: grid;
   place-content: center;
-  background: url(/img/background/gold-2889396_1920.webp);
+  background: url(/img/background/gold-2889396_1920.avif);
   background-size: cover;
   position: relative;
 }
@@ -504,7 +504,7 @@ h1 {
   padding: 100px;
   display: grid;
   place-content: center;
-  background: url(/img/background/wave-81840_1280.webp);
+  background: url(/img/background/wave-81840_1280.avif);
   background-size: cover;
   position: relative;
 }
