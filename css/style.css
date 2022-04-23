@@ -297,6 +297,7 @@ h1 {
 
 .ui {
   width: 100vw;
+  background: rgb(37, 22, 0);
   display: grid;
   padding: 100px;
 }
@@ -367,6 +368,77 @@ h1 {
 }
 
 .color-white-two {
+=======
+.ui:nth-child(2) {
+  background: rgb(0, 29, 4);
+}
+
+.ui .title h5 {
+  color: rgb(211, 127, 0);
+}
+
+.ui .title h1 {
+  color: rgb(211, 127, 0);
+}
+
+.ui .title p {
+  color: rgb(148, 101, 0);
+}
+
+.ui:nth-child(2) .title h5 {
+  color: rgb(0, 196, 0);
+}
+
+.ui:nth-child(2) .title h1 {
+  color: rgb(0, 196, 0);
+}
+
+.ui:nth-child(2) .title p {
+  color: rgb(0, 151, 0);
+}
+
+.ui .desc h5 {
+  color: rgb(148, 101, 0);
+}
+
+.ui .desc h3 {
+  color: rgb(211, 127, 0);
+}
+
+.ui:nth-child(2) .desc h5 {
+  color: rgb(0, 148, 32);
+}
+
+.ui:nth-child(2) .desc h3 {
+  color: rgb(0, 196, 0);
+}
+
+.ui .colors span:nth-child(1) {
+  background-color: #ffffff;
+}
+
+.ui .colors span:nth-child(2) {
+  background-color: #fff4a7;
+}
+
+.ui .colors span:nth-child(3) {
+  background-color: #f18e43;
+}
+
+.ui:nth-child(2) .colors span:nth-child(1) {
+  background-color: #e58181;
+}
+
+.ui:nth-child(2) .colors span:nth-child(2) {
+  background-color: #37718e;
+}
+
+.ui:nth-child(2) .colors span:nth-child(3) {
+  background-color: #519259;
+}
+
+.ui:nth-child(2) .colors span:nth-child(4) {
+>>>>>>> 46cffa0d5f2d62bd72adb185f624e0717c77371e
   background-color: #fffbcf;
 }
 
@@ -401,10 +473,12 @@ h1 {
 
 .design {
   width: 100vw;
+  background: rgb(59, 0, 0);
   padding: 100px;
   display: grid;
   place-content: center;
 }
+
 
 .bg-dark-red-one {
   background:rgb(59, 0, 0);;
@@ -427,6 +501,29 @@ h1 {
 }
 
 .color-red-five {
+=======
+.design:nth-child(2) {
+  background: rgb(95, 0, 0);
+}
+
+.design:nth-child(3) {
+  background: rgb(121, 0, 0);
+}
+
+.design .title h5 {
+  color: #ff8d81;
+}
+
+.design .title h1 {
+  color: #ff8d81;
+}
+
+.design .title p {
+  color: #df3d2b;
+}
+
+.design .title p > * {
+>>>>>>> 46cffa0d5f2d62bd72adb185f624e0717c77371e
   color: #ff5846;
 }
 
@@ -458,6 +555,66 @@ h1 {
   background-color: #848484;
 }
 
+=======
+.design .title:nth-child(2) h1 {
+  color: #300500;
+}
+
+.design .title:nth-child(2) h5 {
+  color: #300500;
+}
+
+.design .title:nth-child(2) p {
+  color: #e46a5c;
+}
+
+.design .desc h3:nth-child(2) {
+  color: #300500;
+}
+
+.design .desc h5 {
+  color: #df3d2b;
+}
+
+.design .desc h5:nth-child(2) {
+  color: #e46a5c;
+}
+
+.design:nth-child(2) .colors span:nth-child(1) {
+  background-color: #ffffff;
+}
+
+.design:nth-child(2) .colors span:nth-child(2) {
+  background-color: #c81e1e;
+}
+
+.design:nth-child(2) .colors span:nth-child(3) {
+  background-color: #848484;
+}
+
+.design:nth-child(2) .colors span:nth-child(4) {
+  background-color: #000000;
+  color: white;
+}
+
+.design:nth-child(3) .colors span:nth-child(1) {
+  background-color: #ffffff;
+}
+
+.design:nth-child(3) .colors span:nth-child(2) {
+  background-color: #c81e1e;
+}
+
+.design:nth-child(3) .colors span:nth-child(3) {
+  background-color: #848484;
+}
+
+.design:nth-child(3) .colors span:nth-child(4) {
+  background-color: #000000;
+  color: white;
+}
+
+>>>>>>> 46cffa0d5f2d62bd72adb185f624e0717c77371e
 .design .image img {
   object-fit: cover;
   width: 100%;
@@ -506,6 +663,39 @@ h1 {
 
 .color-purple-three {
   color: rgb(146, 0, 146);
+}
+
+.web:nth-child(2) {
+  background: rgb(82, 0, 82);
+}
+
+.web:nth-child(3) {
+  background: rgb(107, 0, 107);
+}
+
+.web .title h5 {
+  color: rgb(226, 0, 226);
+}
+
+.web .title h1 {
+  color: rgb(255, 0, 255);
+}
+
+.web .title p {
+  color: rgb(192, 0, 192);
+}
+
+.web .desc h3 {
+  color: rgb(255, 0, 255);
+}
+
+.web .desc h5 {
+  color: rgb(192, 0, 192);
+}
+
+.web .desc h5 > strong {
+  color: rgb(240, 0, 240);
+>>>>>>> 46cffa0d5f2d62bd72adb185f624e0717c77371e
 }
 
 .web .image img {
