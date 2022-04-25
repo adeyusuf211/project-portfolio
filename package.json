@@ -1,0 +1,24 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Ini adalah website portfolio pribadi saya yang menyajikan daftar karya - karya yang telah saya buat sebelumnya. DImana website ini dibuat dengan menggunakan teknologi `html`, `css`, `javascript`, dan `tailwindcss`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeyusuf211/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adeyusuf211/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/adeyusuf211/my-portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.font-inter {
+    font-family: "Inter";
+}
+
+.bg-dark-gray-one {
+    background-color: rgb(10, 10, 10);
+}
+
+.bg-dark-gray-two {
+    background-color: rgb(20, 20, 20);
+}
