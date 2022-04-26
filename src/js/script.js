@@ -1,29 +1,33 @@
 // Script for auto updating a year in footer
-// const getTahunCopyright = (copyright) => {
-//     const year = new Date().getFullYear();
-//     return `${copyright} &copy; ${year}`;
-// }
+const getTahunCopyright = (copyright) => {
+    const year = new Date().getFullYear();
+    return `${copyright} &copy; ${year}`;
+}
 
-// const footerCopy = document.querySelector('.footer-copy h4');
-// const content    = `<a href="https://www.instagram.com/adeyusuf.official" target="_blank">Ade Yusuf</a>`;
+const footer     = document.querySelector('#footer h3');
+const content    = `<a href="https://www.instagram.com/adeyusuf.official" target="_blank">Ade Yusuf</a>`;
 
-// footerCopy.innerHTML = getTahunCopyright(content);
+footer.innerHTML = getTahunCopyright(content);
 // End auto updating year in footer script
 
-// script for smooth scrolling
-const links = document.querySelectorAll("#nav ul li a");
+const categories = document.querySelectorAll("#category li a");
 
-links.forEach(link => {
-    link.addEventListener('click', clickHandler);
+categories.forEach(category => {
+  category.addEventListener('click', function() {
+    for(let i = 0; i < categories.length; i++) {
+      categories[i].classList.remove('text-gray-400');
+    }
+    category.classList.add('text-gray-400');
+  });
 });
 
-function clickHandler(e) {
-  e.preventDefault();
-  const href        = this.getAttribute("href");
-  const offsetTop   = document.querySelector(href).offsetTop;
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
-}
-// end smooth scrolling script
+window.addEventListener('scroll', function() {
+  const backToTop = document.querySelector('#back-to-top');
+  if(this.window.pageYOffset > this.document.querySelector('#nav').offsetTop) {
+    backToTop.classList.add('flex');
+    backToTop.classList.remove('hidden');
+  } else {
+    backToTop.classList.remove('flex');
+    backToTop.classList.add('hidden');
+  }
+});
